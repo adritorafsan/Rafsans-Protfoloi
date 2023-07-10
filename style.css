@@ -10,6 +10,7 @@ body {
 }
 
 #first{
+   
     width: 1240px;
     height: 490px;
     margin-left: 30%;
@@ -19,45 +20,72 @@ body {
 }
 
 #first .item1{
-    height: 440px;
-    width: 650px;
+    width: 688px;
+    height: 408px;
+    background: var(--grey-900, #111827);
+    border-radius: 12px;
+}
+
+
+.item2{
+    background: var(--grey-900, #111827);
+    width: 480px;
+    height: 408px;
     background: rgb(22, 17, 28);
     border-radius: 12px;
 }
 
-.item2{
-    height: 440px;
-    width: 500px;
-    background: rgb(22, 17, 28);
+#first .item2 img{
+    width: 480px;
+    height: 408px;
     border-radius: 12px;
 }
 
 #second{
-    border: 2px solid red;
     width: 1240px;
-    height: 490px;
+    height: 550px;
     margin-left: 30%;
     display: flex;
     gap: 50px;
+    margin-top: -2%;
 }
 
 #second .item3{
     height: 440px;
     width: 650px;
-    background: rgb(22, 17, 28);
+
     border-radius: 12px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 200px 200px;
+    gap: 3em 3.5em;
+    justify-content: center;
+   
 }
 
 
+#second .item3 .box{
+    background: var(--grey-900, #111827);
+    border-radius: 12px;
+    
+}
 
+#second .item3 .box1, .box2{
+    width: 220px;
+    height: 296px;
+    
+}
+
+#second .item3 .box3{ 
+    grid-column: span 2;
+    height: 296px;
+    width: 480px;
+}
 
 
 #second .item4{
-    height: 440px;
-    width: 500px;
-    background: rgb(22, 17, 28);
+    height: 640px;
+    width: 688px;
+    background: var(--grey-900, #111827);
     border-radius: 12px;
    
 }
