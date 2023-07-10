@@ -9,8 +9,8 @@ body {
     height: 1280px;
 }
 
-#first{
-   
+#first {
+
     width: 1240px;
     height: 490px;
     margin-left: 30%;
@@ -19,7 +19,7 @@ body {
     margin-top: 4%;
 }
 
-#first .item1{
+#first .item1 {
     width: 688px;
     height: 408px;
     background: var(--grey-900, #111827);
@@ -27,7 +27,7 @@ body {
 }
 
 
-.item2{
+.item2 {
     background: var(--grey-900, #111827);
     width: 480px;
     height: 408px;
@@ -35,57 +35,79 @@ body {
     border-radius: 12px;
 }
 
-#first .item2 img{
+#first .item2 img {
     width: 480px;
     height: 408px;
     border-radius: 12px;
 }
 
-#second{
+#second {
     width: 1240px;
     height: 550px;
     margin-left: 30%;
     display: flex;
-    gap: 50px;
+
     margin-top: -2%;
 }
 
-#second .item3{
+#second .item3 {
     height: 440px;
-    width: 650px;
-
+    width: 540px;
     border-radius: 12px;
     display: grid;
     grid-template-columns: 200px 200px;
     gap: 3em 3.5em;
-    justify-content: center;
-   
+    justify-content: start;
+
 }
 
 
-#second .item3 .box{
+#second .item3 .box {
     background: var(--grey-900, #111827);
     border-radius: 12px;
-    
+
 }
 
-#second .item3 .box1, .box2{
+#second .item3 .box1,
+.box2 {
     width: 220px;
     height: 296px;
-    
+
 }
 
-#second .item3 .box3{ 
+#second .item3 .box3 {
     grid-column: span 2;
     height: 296px;
     width: 480px;
 }
 
 
-#second .item4{
+#second .item4 {
     height: 640px;
     width: 688px;
     background: var(--grey-900, #111827);
     border-radius: 12px;
-   
+
+}
+
+#navbar {
+    position: relative;
+    background: red;
+    height: 300px;
+    width: 500px;
+}
+
+.navbar {
+    display: flex;
+    width: 324px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 50px;
+    margin-top: 10%;
+    margin-left: 60%;
+    border-radius: 100px;
+    background: var(--grey-900, #111827);
+    backdrop-filter: blur(4px);
 }
