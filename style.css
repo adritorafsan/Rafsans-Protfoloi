@@ -90,14 +90,8 @@ body {
 
 }
 
-#navbar {
-    position: relative;
-    background: red;
-    height: 300px;
-    width: 500px;
-}
 
-.navbar {
+.navbar{
     display: flex;
     width: 324px;
     padding: 12px;
@@ -110,4 +104,26 @@ body {
     border-radius: 100px;
     background: var(--grey-900, #111827);
     backdrop-filter: blur(4px);
+}
+
+.navbar a{
+    height: 52px;
+    width: 52px;
+    background: var(--grey-800, #1F2937);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar .rafsan{
+    background: black;
+}
+
+.navbar a:hover{
+    background: black;
+    transition: .2s ease-in;
+    
+    
 }
