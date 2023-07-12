@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +9,13 @@ body {
     background: #030712;
     width: 1440px;
     height: 1280px;
+    font-family: 'Inter', sans-serif;
 }
 
 #first {
 
     width: 1240px;
-    height: 490px;
+    height: 408px;
     margin-left: 30%;
     display: flex;
     gap: 50px;
@@ -24,7 +27,43 @@ body {
     height: 408px;
     background: var(--grey-900, #111827);
     border-radius: 12px;
+    /* padding: 40px; */
+
 }
+
+.item1 .text {
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.item1 .text p {
+    color: var(--grey-50, #F9FAFB);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 136.023%;
+}
+
+.item1 .text button {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 8px;
+    color: white;
+    width: 230px;
+    border: none;
+    font-size: 1.3em;
+    background: var(--grey-950, #030712);
+    cursor: pointer;
+}
+
 
 
 .item2 {
@@ -34,6 +73,8 @@ body {
     background: rgb(22, 17, 28);
     border-radius: 12px;
 }
+
+
 
 #first .item2 img {
     width: 480px;
@@ -46,8 +87,7 @@ body {
     height: 550px;
     margin-left: 30%;
     display: flex;
-
-    margin-top: -2%;
+    margin-top: 2.5%;
 }
 
 #second .item3 {
@@ -67,6 +107,59 @@ body {
     border-radius: 12px;
 
 }
+
+.names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    margin-top: 8%;
+}
+
+.names1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    margin-top: 2%;
+}
+
+
+.btn {
+    display: flex;
+    width: 180px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 1000px;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    background: var(--grey-950, #030712);
+    cursor: pointer;
+}
+
+.btn1 {
+    display: flex;
+    width: 440px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 1000px;
+    border: none;
+    color: white;
+    font-size: 1.4em;
+    background: var(--grey-950, #030712);
+    cursor: pointer;
+}
+
+
 
 #second .item3 .box1,
 .box2 {
@@ -90,8 +183,15 @@ body {
 
 }
 
+#third{
+    overflow: hidden;
+  position: fixed;
+  top: 580px;
+  left: -300px;
+  width: 100%;
+}
 
-.navbar{
+.navbar {
     display: flex;
     width: 324px;
     padding: 12px;
@@ -106,7 +206,7 @@ body {
     backdrop-filter: blur(4px);
 }
 
-.navbar a{
+.navbar a {
     height: 52px;
     width: 52px;
     background: var(--grey-800, #1F2937);
@@ -117,13 +217,55 @@ body {
     gap: 12px;
 }
 
-.navbar .rafsan{
+.navbar .rafsan {
     background: black;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background: black;
-    transition: .2s ease-in;
-    
-    
+
+    transform: translateY(-38px);
+    transition: transform .8s;
+}
+
+.firstbox {
+    width: 232.78px;
+    height: 224.869px;
+    flex-shrink: 0;
+}
+
+.iconssx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 26%;
+    margin-top: -80%;
+    background: black;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.iconssy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23%;
+    margin-top: -80%;
+    background: black;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.iconssz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 37.5%;
+    margin-top: -36.7%;
+    background: black;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
 }
