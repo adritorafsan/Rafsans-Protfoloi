@@ -126,6 +126,7 @@ body {
     gap: 25px;
     color: white;
     margin-top: 2%;
+
 }
 
 
@@ -144,7 +145,7 @@ body {
     cursor: pointer;
 }
 
-.btn1 {
+.btn2 {
     display: flex;
     width: 440px;
     padding: 12px 24px;
@@ -157,6 +158,7 @@ body {
     font-size: 1.4em;
     background: var(--grey-950, #030712);
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 
@@ -268,4 +270,200 @@ body {
     height: 120px;
     width: 120px;
     border-radius: 50%;
+}
+
+/* MAKING RESPONSIVE */
+@media only screen and (max-width: 1448px) {
+    #first {
+
+        width: 1240px;
+        height: 408px;
+        margin-left: 6%;
+        display: flex;
+        gap: 40px;
+        margin-top: 4%;
+    }
+
+    #second {
+        margin-left: 6%;
+    }
+
+
+}
+
+@media only screen and (max-width: 650px){
+    body {
+        width: 390px;
+        height: 2119px;
+    }
+
+    #first {
+        position: relative;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        margin-top: 40%;
+    }
+
+    #first .item1 {
+        width: 361px;
+        height: 344px;
+        flex-shrink: 0;
+        margin-left: -1%;
+    }
+
+
+    .item1 .text {
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+
+    .item1 .text p {
+        color: var(--grey-50, #F9FAFB);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 136.023%;
+    }
+
+    #first .item2 {
+        margin-left: -1%;
+        width: 361px;
+        height: 344px;
+
+    }
+
+    #first .item2 img {
+        width: 361px;
+        height: 344px
+    }
+
+
+    #second {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 3%;
+        gap: 50px;
+        margin-top: 80%;
+
+        height: 1450px;
+    }
+
+    #second .item3 {
+
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    #second .item3 .box1,
+    .box2 {
+        width: 361px;
+        height: 296px;
+        flex-shrink: 0;
+
+    }
+
+    #second .item3 .firstbox {
+        width: 480px;
+        height: 221px;
+        margin-left: -15%;
+        z-index: -1;
+    }
+
+    #second .item3 .secondbox {
+        width: 480px;
+        height: 221px;
+        margin-left: -15%;
+        z-index: -1;
+    }
+
+    .btn {
+        display: flex;
+        width: 321px;
+        padding: 12px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn2 {
+        width: 321px;
+        gap: 8px;
+    }
+
+    .iconssx {
+        margin-left: 35%;
+        margin-top: -49.5%;
+
+    }
+
+    .iconssy {
+        margin-left: 35%;
+        margin-top: -49.5%;
+
+    }
+
+    #second .item3 .box3 {
+        width: 361px;
+        height: 296px;
+        flex-shrink: 0;
+    }
+
+    #second .item3 .thirdbox {
+        width: 480px;
+        height: 221px;
+        margin-left: -15%;
+        z-index: -1;
+    }
+
+    .iconssz {
+        margin-left: 35%;
+        margin-top: -49.5%;
+        margin-bottom: 2px;
+
+    }
+
+
+    #second .item4 {
+        width: 361px;
+        height: 396px;
+        margin-top: 36%;
+        background: var(--grey-800, #1F2937);
+    }
+
+    #third {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+        width: 322px;
+        padding: 16px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 36px 16px;
+    }
+}
+
+@media only screen and (max-width: 1022){
+    #first {
+        width: 1240px;
+        height: 408px;
+        margin-left: 5%;
+        display: flex;
+        gap: 35px;
+        margin-top: 4%;
+    }
+
+    #second {
+        margin-left: 5%;
+    }
 }
