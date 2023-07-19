@@ -12,9 +12,14 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+#navigation {
+    display: none;
+}
+
 #first {
 
     width: 1240px;
+    border: 2px solid blue;
     height: 408px;
     margin-left: 30%;
     display: flex;
@@ -83,8 +88,9 @@ body {
 }
 
 #second {
+    border: 2px solid red;
     width: 1240px;
-    height: 550px;
+    height: 650px;
     margin-left: 30%;
     display: flex;
     margin-top: 2.5%;
@@ -185,12 +191,19 @@ body {
 
 }
 
-#third{
+#third {
     overflow: hidden;
-  position: fixed;
-  top: 580px;
-  left: -300px;
-  width: 100%;
+    position: fixed;
+    top: 81%;
+    left: 28%;
+    width: 50%;
+    border: 2px solid green;
+    height: 250px;
+    display: flex;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .navbar {
@@ -201,8 +214,8 @@ body {
     align-items: center;
     gap: 12px;
     height: 50px;
-    margin-top: 10%;
-    margin-left: 60%;
+    /* margin-top: 10%;
+    margin-left: 60%; */
     border-radius: 100px;
     background: var(--grey-900, #111827);
     backdrop-filter: blur(4px);
@@ -272,198 +285,134 @@ body {
     border-radius: 50%;
 }
 
-/* MAKING RESPONSIVE */
-@media only screen and (max-width: 1448px) {
-    #first {
+ /* MAKING RESPONSIVE  */
 
-        width: 1240px;
-        height: 408px;
-        margin-left: 6%;
+ @media (max-width: 1690px){
+    #first{
+        margin-left: auto;
+    }
+    #second{
+        
+            margin-left:auto;
+        
+    }
+    #third{
+        top: 67%;
+        margin-left: auto;
+        
+    }
+} 
+ @media(max-width: 1440px){
+    #first{
+        margin-left: 5%;
+    }
+    #second{
+        
+            margin-left: 5%;
+        
+    }
+    #third{
+        top: 67%;
+        left: 18%;
+        margin-left: 5%;
+        
+    }
+} 
+ @media(max-width: 790px){
+    #first{
         display: flex;
-        gap: 40px;
-        margin-top: 4%;
+        flex-direction: column;
+        height: 1270px;
+        margin-top: 100px;
     }
 
-    #second {
-        margin-left: 6%;
+    #first .item1{
+        width: 90%;
+        margin-left: 55px;
+        height: 600px;
+        
+    }
+    
+    #first .item1 .text p{
+        font-size: 34px;
+
+    line-height: 186.023%;
+    }
+    #first .item1 .text button{
+        padding: 25px 20px;
+        font-size: 1.6em;
+    } 
+    #first .item2{
+        width: 90%;
+        margin-left: 55px;
+        height: 600px;
+        
+    }
+    #first .item2 img{
+        width: 100%;
+        height: 600px;
+        
     }
 
+    #second{
+        display: flex;
+        flex-direction: column;
+        height: 2500px;
+        gap: 50px;
+    }
+    #second .item3{
+        display: flex;
+        flex-direction: column;
+        height: 1600px;
+        width: 100%;
+        margin-left: 55px;
+    }
+    #second .item3 .box1,
+.box2 {
+    width: 1135px;
+    height: 600px;
+    
+
+}
+#second .item3 
+.box3 {
+    width: 1135px;
+    height: 600px;
 
 }
 
-@media only screen and (max-width: 650px){
-    body {
-        width: 390px;
-        height: 2119px;
-    }
-
-    #first {
-        position: relative;
-        display: flex;
-        gap: 10px;
-        flex-direction: column;
-        margin-top: 40%;
-    }
-
-    #first .item1 {
-        width: 361px;
-        height: 344px;
-        flex-shrink: 0;
-        margin-left: -1%;
-    }
-
-
-    .item1 .text {
-        padding: 20px;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-
-    .item1 .text p {
-        color: var(--grey-50, #F9FAFB);
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 136.023%;
-    }
-
-    #first .item2 {
-        margin-left: -1%;
-        width: 361px;
-        height: 344px;
-
-    }
-
-    #first .item2 img {
-        width: 361px;
-        height: 344px
-    }
-
-
-    #second {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-
-        margin-left: 3%;
-        gap: 50px;
-        margin-top: 80%;
-
-        height: 1450px;
-    }
-
-    #second .item3 {
-
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-    }
-
-    #second .item3 .box1,
-    .box2 {
-        width: 361px;
-        height: 296px;
-        flex-shrink: 0;
-
-    }
-
-    #second .item3 .firstbox {
-        width: 480px;
-        height: 221px;
-        margin-left: -15%;
-        z-index: -1;
-    }
-
-    #second .item3 .secondbox {
-        width: 480px;
-        height: 221px;
-        margin-left: -15%;
-        z-index: -1;
-    }
-
-    .btn {
-        display: flex;
-        width: 321px;
-        padding: 12px 24px;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .btn2 {
-        width: 321px;
-        gap: 8px;
-    }
-
-    .iconssx {
-        margin-left: 35%;
-        margin-top: -49.5%;
-
-    }
-
-    .iconssy {
-        margin-left: 35%;
-        margin-top: -49.5%;
-
-    }
-
-    #second .item3 .box3 {
-        width: 361px;
-        height: 296px;
-        flex-shrink: 0;
-    }
-
-    #second .item3 .thirdbox {
-        width: 480px;
-        height: 221px;
-        margin-left: -15%;
-        z-index: -1;
-    }
-
-    .iconssz {
-        margin-left: 35%;
-        margin-top: -49.5%;
-        margin-bottom: 2px;
-
-    }
-
-
-    #second .item4 {
-        width: 361px;
-        height: 396px;
-        margin-top: 36%;
-        background: var(--grey-800, #1F2937);
-    }
-
-    #third {
+#second .item4{
+    width: 1135px;
+    margin-left: 55px;
+}
+    #third{
         display: none;
     }
 
-    #navigation {
-        display: flex;
-        width: 322px;
-        padding: 16px;
-        justify-content: space-between;
-        align-items: center;
-        margin: 36px 16px;
+    #navigation{
+        display: block;
+       
+            display: flex;
+            width: 100%;
+            padding: 16px;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 55px;
+            margin-right: 55px;
+            margin-top: 50px;
+        
     }
+    #navigation .logo img{
+        height: 70px;
+    }
+    #navigation .menu .bolod{
+        height: 70px;
+        width: 100px;
+    }
+    
+
+} 
+@media(max-width: 350px){
+
 }
 
-@media only screen and (max-width: 1022){
-    #first {
-        width: 1240px;
-        height: 408px;
-        margin-left: 5%;
-        display: flex;
-        gap: 35px;
-        margin-top: 4%;
-    }
-
-    #second {
-        margin-left: 5%;
-    }
-}
